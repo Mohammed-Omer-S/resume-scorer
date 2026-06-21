@@ -38,7 +38,7 @@ export default function App() {
       formData.append("jobDescription", jobDescription);
 
       const { data } = await axios.post(
-        "http://localhost:5000/api/analyze",
+        `${import.meta.env.VITE_API_URL}/api/analyze`,
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
       );
