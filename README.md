@@ -37,50 +37,50 @@ You'll need Node 18+ and a free Gemini API key from [aistudio.google.com/app/api
 
 Clone it:
 
-\`\`\`
+```
 git clone https://github.com/Mohammed-Omer-S/resume-scorer.git
 cd resume-scorer
-\`\`\`
+```
 
 Backend:
 
-\`\`\`
+```
 cd backend
 npm install
 cp .env.example .env
-\`\`\`
+```
 
 Open `.env` and drop your key in:
 
-\`\`\`
+```
 PORT=5000
 GEMINI_API_KEY=your_key_here
-\`\`\`
+```
 
 Then:
 
-\`\`\`
+```
 npm run dev
-\`\`\`
+```
 
 Frontend, in a separate terminal:
 
-\`\`\`
+```
 cd frontend
 npm install
-\`\`\`
+```
 
 Create a `.env` file inside `frontend` with:
 
-\`\`\`
+```
 VITE_API_URL=http://localhost:5000
-\`\`\`
+```
 
 Then:
 
-\`\`\`
+```
 npm run dev
-\`\`\`
+```
 
 Open `http://localhost:5173` and try it.
 
@@ -95,19 +95,21 @@ Nothing gets saved anywhere — no database, no accounts. Each analysis is a one
 
 ## Folder structure
 
-\`\`\`
+```
 resume-scorer/
-├── backend/
-│   ├── server.js
-│   ├── routes/analyze.js
-│   ├── utils/aiPrompt.js
-│   └── .env.example
-└── frontend/
-    └── src/
-        ├── components/
-        ├── App.jsx
-        └── index.css
-\`\`\`
+backend/
+  server.js
+  routes/
+    analyze.js
+  utils/
+    aiPrompt.js
+  .env.example
+frontend/
+  src/
+    components/
+    App.jsx
+    index.css
+```
 
 ## License
 
